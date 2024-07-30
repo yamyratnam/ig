@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react"
-import { TOKEN, USER_PROFILE, getStauts } from "../../../kv"
-import { useNavigate } from "react-router-dom"
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from 'styled-components';
-import Status from "./components/Status";
+import { TOKEN, USER_PROFILE, getStatus } from "../../../kv";
 import Feed from "./components/Feed";
+import Status from "./components/Status";
 import StatusModal from "./components/StatusModal";
 
 export default function Main() {
@@ -23,7 +23,7 @@ export default function Main() {
   useEffect(() => {
     async function doFetch() {
 
-      let res = await fetch(getStauts, {
+      let res = await fetch(getStatus, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json;charset=utf-8',

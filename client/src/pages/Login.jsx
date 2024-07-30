@@ -1,8 +1,8 @@
-import styled from "styled-components"
-import { useState, useEffect } from "react"
-import { postLogin, TOKEN, USERNAME } from "../kv";
-import { useNavigate, Link } from "react-router-dom";
-import logo from '../assets/schat.png'
+import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import styled from "styled-components";
+import logo from '../assets/img.gif';
+import { TOKEN, USERNAME, postLogin } from "../kv";
 
 export default function Login() {
 

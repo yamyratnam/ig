@@ -29,7 +29,7 @@ module.exports.createContact = async (req, res) => {
           userdp: requser.dp,
           body: {
             title: "New Account Created!!",
-            body: "Welcome to instaminilgram"
+            body: "Welcome to instagram"
           }
         }] })
       }

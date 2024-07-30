@@ -19,12 +19,12 @@ module.exports.uploadStatus = async (req, res) => {
     }
     else {
       res.status(500).json({ status: false, msg: er })
-      console.log("Saveing Status Err", er);
+      console.log("Saving Status Err", er);
     }
   }
   else {
     res.json({ status: false, msg: "Invalid Username" });
-    console.log("did no save post invalid username")
+    console.log("did not save post invalid username")
   }
 
 }

@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react"
-import { TOKEN, USER_PROFILE, CONTACTS, getFollowers, getContacts } from "../../../kv"
-import { Link, useNavigate } from "react-router-dom"
+import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import nofollow from '../../../assets/notfollowing.webp'
+import nofollow from '../../../assets/notfollowing.webp';
+import { CONTACTS, TOKEN, USER_PROFILE, getContacts, getFollowers } from "../../../kv";
 
 export default function Contacts() {
 
@@ -71,11 +71,6 @@ export default function Contacts() {
       
       <div className="search-wrapper">
         <input type="text" placeholder="Search.." />
-        <ul>
-          <li>lsdkfd</li>
-          <li>ldsfkdjfl</li>
-          <li>ldkfldk</li>
-        </ul>
       </div>
 
       <div className="following-wrapper">

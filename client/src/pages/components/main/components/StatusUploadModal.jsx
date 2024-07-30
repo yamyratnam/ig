@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import uploadIcon from "../../../../assets/upload.jpg"
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import styled from "styled-components";
+import uploadIcon from "../../../../assets/upload.jpg";
 import { TOKEN, USERNAME, USER_PROFILE, postUploadStauts } from "../../../../kv";
 
 export default function StatusUploadModal({ setShowStatusUploadModal, user}) {

@@ -36,3 +36,4 @@ module.exports.me = async (req, res) => {
   if (user) res.status(200).json({ status: true, user });
   else res.status(400).json({ status: false, msg: "No Such User Found" });
 }
+
